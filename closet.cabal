@@ -25,7 +25,10 @@ library
                      OverloadedStrings
   build-depends:       base-noprelude >=4.12
                      , classy-prelude
+                     , HDBC
+                     , HDBC-sqlite3
                      , lens
+                     , uuid
 
 executable closet
   main-is:             Main.hs
@@ -43,8 +46,8 @@ test-suite closet-tests
   default-extensions:
                      DerivingStrategies
                      NoImplicitPrelude
-                     OverloadedStrings
                      OverloadedLists
+                     OverloadedStrings
   build-depends:       base-noprelude >=4.12
                      , classy-prelude
                      , closet
